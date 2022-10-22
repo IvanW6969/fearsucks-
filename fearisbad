@@ -1,0 +1,145 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Name = Instance.new("ScreenGui")
+local betterfeargui = Instance.new("Frame")
+local Name_2 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local FPS = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Cash = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local FEARSUCKS = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+Name.Name = "Name"
+Name.Parent = game.CoreGui
+Name.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+betterfeargui.Name = "betterfeargui"
+betterfeargui.Parent = Name
+betterfeargui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+betterfeargui.Position = UDim2.new(0.0947752148, 0, 0.265027314, 0)
+betterfeargui.Size = UDim2.new(0, 334, 0, 208)
+
+Name_2.Name = "Name"
+Name_2.Parent = betterfeargui
+Name_2.BackgroundColor3 = Color3.fromRGB(127, 127, 129)
+Name_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BorderSizePixel = 0
+Name_2.Position = UDim2.new(0.398828238, 0, 0.721153855, 0)
+Name_2.Size = UDim2.new(0, 200, 0, 50)
+Name_2.Font = Enum.Font.SourceSans
+Name_2.Text = "Name"
+Name_2.TextColor3 = Color3.fromRGB(255, 85, 0)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextWrapped = true
+
+UICorner.Parent = Name_2
+
+UICorner_2.Parent = betterfeargui
+
+FPS.Name = "FPS"
+FPS.Parent = betterfeargui
+FPS.BackgroundColor3 = Color3.fromRGB(127, 127, 129)
+FPS.Position = UDim2.new(0.401197612, 0, 0.240384609, 0)
+FPS.Size = UDim2.new(0, 200, 0, 50)
+FPS.Font = Enum.Font.SourceSans
+FPS.TextColor3 = Color3.fromRGB(255, 85, 0)
+FPS.TextScaled = true
+FPS.TextSize = 14.000
+FPS.TextWrapped = true
+
+UICorner_3.Parent = FPS
+
+Cash.Name = "Cash"
+Cash.Parent = betterfeargui
+Cash.BackgroundColor3 = Color3.fromRGB(127, 127, 129)
+Cash.Position = UDim2.new(-0.00299401209, 0, 0.480769217, 0)
+Cash.Size = UDim2.new(0, 200, 0, 50)
+Cash.Font = Enum.Font.FredokaOne
+Cash.TextColor3 = Color3.fromRGB(255, 85, 0)
+Cash.TextScaled = true
+Cash.TextSize = 14.000
+Cash.TextWrapped = true
+
+UICorner_4.Parent = Cash
+
+FEARSUCKS.Name = "FEARSUCKS"
+FEARSUCKS.Parent = betterfeargui
+FEARSUCKS.BackgroundColor3 = Color3.fromRGB(127, 127, 129)
+FEARSUCKS.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FEARSUCKS.BorderSizePixel = 0
+FEARSUCKS.Position = UDim2.new(0.222181529, 0, 0, 0)
+FEARSUCKS.Size = UDim2.new(0, 200, 0, 50)
+FEARSUCKS.Font = Enum.Font.Cartoon
+FEARSUCKS.Text = "FEAR IS ASS AT SCRIPTING"
+FEARSUCKS.TextColor3 = Color3.fromRGB(255, 85, 0)
+FEARSUCKS.TextScaled = true
+FEARSUCKS.TextSize = 14.000
+FEARSUCKS.TextWrapped = true
+
+UICorner_5.Parent = FEARSUCKS
+
+-- Scripts:
+
+local function KUHDRO_fake_script() -- Name_2.LocalScript 
+	local script = Instance.new('LocalScript', Name_2)
+
+	local UserName = game.Players.LocalPlayer.Name
+	local Gui = script.Parent.Parent.Parent
+	local Frame = script.Parent.Parent
+	local Textlabel = script.Parent
+	Textlabel.Text = "Username: "..UserName
+	print("Username Loaded!")
+end
+coroutine.wrap(KUHDRO_fake_script)()
+local function MBAH_fake_script() -- FPS.LocalScript 
+	local script = Instance.new('LocalScript', FPS)
+
+	local RS = game:GetService("RunService")
+	local frames = 0
+	RS.RenderStepped:Connect(function()
+		frames = frames + 1
+	end)
+	while wait(1) do
+		script.Parent.Text = "Current FPS: "..frames
+		frames = 0
+	end
+end
+coroutine.wrap(MBAH_fake_script)()
+local function DLBP_fake_script() -- Cash.LocalScript 
+	local script = Instance.new('LocalScript', Cash)
+
+	local Pref = "$"
+	local cash = game.Players.Labadie37956.DataFolder.Currency.Value
+	local Textlbl = script.Parent
+	Textlbl.Text = "Cash: $"..cash
+end
+coroutine.wrap(DLBP_fake_script)()
+local function IXUNLQL_fake_script() -- betterfeargui.Drag 
+	local script = Instance.new('LocalScript', betterfeargui)
+
+	local Frame = script.Parent
+	Frame.Active = true
+	Frame.Draggable = true
+end
+coroutine.wrap(IXUNLQL_fake_script)()
+local function DYUIJ_fake_script() -- FEARSUCKS.LocalScript 
+	local script = Instance.new('LocalScript', FEARSUCKS)
+
+	local UserName = game.Players.LocalPlayer.Name
+	local Gui = script.Parent.Parent.Parent
+	local Frame = script.Parent.Parent
+	local Textlabel = script.Parent
+	Textlabel.Text = "Fear Is The Shittest Scripter Ever"
+	TextLabel.TextScaled = true
+	print("Fear Sucks, Made by Tyronee#5559")
+end
+coroutine.wrap(DYUIJ_fake_script)()
