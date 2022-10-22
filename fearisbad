@@ -133,8 +133,7 @@ end
 coroutine.wrap(IXUNLQL_fake_script)()
 local function DYUIJ_fake_script() -- FEARSUCKS.LocalScript 
 	local script = Instance.new('LocalScript', FEARSUCKS)
-
-	local UserName = game.Players.LocalPlayer.Name
+	
 	local Gui = script.Parent.Parent.Parent
 	local Frame = script.Parent.Parent
 	local Textlabel = script.Parent
