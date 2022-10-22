@@ -116,7 +116,7 @@ end
 coroutine.wrap(MBAH_fake_script)()
 local function DLBP_fake_script() -- Cash.LocalScript 
 	local script = Instance.new('LocalScript', Cash)
-
+	while true do task.wait(0.1)
 	local Pref = "$"
 	local cash = game.Players.Labadie37956.DataFolder.Currency.Value
 	local Textlbl = script.Parent
